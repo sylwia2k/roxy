@@ -6,15 +6,30 @@ html {
 body {
 	padding: 0;
 	margin: 0;
+	animation: fadeIn 0.5s;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: pink;
+}
+
+.header-pic {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	border: 2px solid black;
 }
 
 h1 {
 	background-color: pink;
 	text-align: center;
-	padding: 15px;
+	padding: 25px;
 	font-size: 60px;
 	margin: 0px;
-	animation: fadeIn 2s;
+	
 }
 
 h2 {
@@ -23,54 +38,55 @@ h2 {
 	padding-bottom: 15px;
 	font-size: 30px;
 	margin: 0px;
-	animation: fadeIn 2s;
+	
 }
 
 h3 {
 	font-size: 25px;
 	color: #FF75BC;
-	animation: fadeIn 2s;
+	
 }
 
 h4 {
 	font-size: 18px;
-	animation: fadeIn 2s;
+	
 }
 
 a {
 	text-decoration:none ;
 	color: black;
-	animation: fadeIn 2s;
+	
 }
 
 .menu {
 	text-align: center;
-	animation: fadeIn 2s;
+	
 }
 
 .menu-element {
 	font-size: 25px;
 	background-color: pink;
 	margin: 10px;
-	animation: fadeIn 2s;
+	animation: fadeIn 0,5s;
 }
 
 .menu-element:hover {
 	background-color: #FF75BC;
 	cursor: pointer;
-	animation: fadeIn 2s;
+	
 }
 
 .main-pic {
 	text-align: center;
 	margin-top: 25px;
 	border-radius: 50%;
-	animation: fadeIn 2s;
+	
 }
 
 .main-picture {
 	border-radius: 10%;
-	animation: fadeIn 2s;
+	width: 800px;
+	height: 600px;
 }
 
 .info {
@@ -78,33 +94,33 @@ a {
 	padding: 15px;
 	justify-content: center;
 	gap: 20px;
-	animation: fadeIn 2s;
+	
 }
 
 .vet {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	animation: fadeIn 2s;
+	
 }
 
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
-	animation: fadeIn 2s;
+	
 
 }
 
 th {
 	background-color: pink;
-	animation: fadeIn 2s;
+	
 
 }
 
 table {
 	margin-left: 500px;
 	margin-right: 500px;
-	animation: fadeIn 2s;
+	
 
 }
 
@@ -112,7 +128,7 @@ table {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	animation: fadeIn 2s;
+	
 
 }
 
@@ -120,19 +136,23 @@ table {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	margin: 10px;
-	animation: fadeIn 2s;
+	
 }
 
 .single-photo {
 	text-align: center;
 	margin: 10px;
 	background-color: pink;
-	animation: fadeIn 2s;
+	
+}
+
+.single-photo:hover {
+	transform: scale(2)
 }
 
 img {
 	border: 1px solid black;
-	animation: fadeIn 2s;
+	
 }
 
 @media all and (max-width: 800px) {
@@ -149,7 +169,18 @@ img {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		margin: 0px;
+
 	}
+	.main-picture {
+		height: 280px;
+		width: 370px;
+	}
+
+	.main-pic {
+		text-align: left;
+	
+	}
+
 }
 
 @keyframes fadeIn {
